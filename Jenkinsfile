@@ -14,10 +14,8 @@ pipeline {
    }
 
     stages {
-	 {
         stage ('Compile Stage') {
-
-            bat(/"${mvnHome}\bin\mvn" clean package/)
+              bat(/"${mvnHome}\bin\mvn" clean package/)
             }
         }
 		
