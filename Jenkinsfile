@@ -17,7 +17,7 @@ pipeline {
         stage ('Compile Stage') {
               bat(/"${mvnHome}\bin\mvn" clean package/)
             }
-        }
+        
 		
 
         stage ('Testing Stage') {
@@ -31,4 +31,3 @@ pipeline {
 	}
 
 }
-
