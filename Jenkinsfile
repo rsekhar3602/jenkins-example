@@ -20,7 +20,7 @@ pipeline {
             bat(/"${mvnHome}\bin\mvn" clean package/)
             }
         }
-
+    }
         stage ('Testing Stage') {
            bat(/"${mvnHome}\bin\mvn" test/)
         }
