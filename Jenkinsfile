@@ -3,16 +3,13 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                ''' 
+           echo 'This is a Initialization stage.'
             }
         }
 
         stage ('Build') {
             steps {
-                echo 'This is a minimal pipeline.'
+                echo 'This is a Build Stage.'
             }
         }
     }
